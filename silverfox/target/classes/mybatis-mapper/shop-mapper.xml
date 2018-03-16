@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper>
+	<select id="queryOneShopByShopName" parameterType="java.lang.String" 
+	resultType="Shop">
+		select * from shop where name = #{value}
+	</select>
+	
+	<select id="queryOneShopByShopId" parameterType="java.lang.Integer">
+		select * from shop where shopid = #{value}
+	</select>
+	
+	<select id="queryAllShops" resultType="java.util.List">
+		select * from shop 
+	</select>
+	
+	<insert id="insertShop" parameterType="Shop">
+		insert into shop (cityid,shopid,cityname,district,tel,longitude,latitude,busline,name,location,displaytype,detailaddress,starttime,endtime,isallday,managerid,baidulongitude,baidulatitude,isnew,businesshours) 
+		values (#{cityId},#{shopId},#{cityName},#{district},#{tel},#{longitude},#{latitude},#{busLine},#{name},#{location},#{displayType},#{detailAddress},#{startTime},#{endTime},#{isAllDay},#{managerId},#{baiduLongitude},#{baiduLatitude},#{isNew},#{businessHours})
+	</insert>
+	
+	<update id="updateShop" parameterType="Shop">
+		update shop 
+		set cityid = #{cityId},
+			cityname = #{cityName},
+			district = #{district},
+			tel = #{tel},
+			longitude = #{longitude},
+			latitude = #{latitude},
+			busline = #{busLine},
+			name = #{name},
+			location = #{location},
+			displaytype = #{displayType},
+			detailaddress = #{detailAddress},
+			starttime = #{startTime},
+			endtime = #{endTime},
+			isallday = #{isAllDay},
+			managerid = #{managerId},
+			baidulongitude = #{baiduLongitude},
+			baidulatitide = #{baiduLatitude},
+			isnew = #{isNew},
+			businesshours = #{businessHours}
+		where shopid = #{shopId}
+	</update>
+	
+	<delete id="deleteShop" parameterType="Shop">
+		delete from shop where shopid = #{shopId}
+	</delete>
+	
+</mapper>

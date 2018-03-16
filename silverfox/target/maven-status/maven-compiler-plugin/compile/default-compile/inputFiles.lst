@@ -1,0 +1,14 @@
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\dao\CarModelDao.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\dao\impl\CarModelDaoImpl.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\dao\impl\CityDaoImpl.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\dao\impl\CommonDao.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\web\controller\CityController.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\pojo\CarPrice.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\dao\CarPriceDao.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\dao\CityDao.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\pojo\City.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\dao\impl\ShopDaoImpl.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\downloader\CasperjsDownloader.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\pojo\Shop.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\dao\ShopDao.java
+D:\workspace\silverfox\src\main\java\com\wkzuche\crawler\pojo\CarModel.java
