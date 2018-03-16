@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper>
+	<select id="queryOneCarModelByCarModelId" parameterType="java.lang.Integer" resultType="CarModel">
+		select * from carmodelinfo where cartypeid = #{value}
+	</select>
+	
+	<select id="queryOneCarModelByCarModelName" parameterType="java.lang.String" resultType="CarModel">
+		select * from carmodelinfo where carmodelname = #{value}
+	</select>
+	
+	<select id="queryAllCarModels" resultType="java.util.List">
+		select * from carmodelinfo
+	</select>
+	
+	<insert id="insertCarModel" parameterType="CarModel">
+		insert into carmodelinfo
+  		(cartypeid, cartypename,brandid,bigimageurl,gearname,emission,emissionunit,structurename,maxpassenger,level,ishot,brandbookingurl,isshow,carinfo) 
+  		values (
+  		#{carTypeId},#{carTypeName},#{brandId},#{bigimageurl},#{gearname},#{emission},#{emissionUnit},#{structureName},#{maxPassenger},#{level},#{isHot},#{brandBookingUrl},#{isShow},#{carInfo}
+  		) 
+	</insert>
+	<update id="updateCarModel" parameterType="CarModel">
+		update carmodelinfo
+  		set  cartypename = #{carTypeName},
+  		brandid = #{brandId},
+  		bigimageurl = #{bigimageurl} ,
+  		gearname = #{gearname},
+  		emission = #{emission},
+  		emissionunit = #{emissionUnit},
+  		structurename = #{structureName},
+  		maxpassenger = #{maxPassenger},
+  		level = #{level},
+  		ishot = #{isHot},
+  		brandbookingurl = #{brandBookingUrl},
+  		isshow = #{isShow},
+  		carinfo = #{carInfo}
+  		where cartypeid = #{carTypeId}
+	</update>
+	
+	<delete id="deleteCarModel" parameterType="CarModel">
+		delete from carmodelinfo where carmodelid = #{carModelId}
+	</delete>
+	
+</mapper>

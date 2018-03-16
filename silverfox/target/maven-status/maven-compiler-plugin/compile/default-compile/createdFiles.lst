@@ -1,0 +1,14 @@
+com\wkzuche\crawler\web\controller\CityController.class
+com\wkzuche\crawler\pojo\CarPrice.class
+com\wkzuche\crawler\pojo\Shop.class
+com\wkzuche\crawler\dao\impl\CarModelDaoImpl.class
+com\wkzuche\crawler\pojo\City.class
+com\wkzuche\crawler\dao\impl\CityDaoImpl.class
+com\wkzuche\crawler\dao\CityDao.class
+com\wkzuche\crawler\pojo\CarModel.class
+com\wkzuche\crawler\dao\CarPriceDao.class
+com\wkzuche\crawler\dao\ShopDao.class
+com\wkzuche\crawler\dao\impl\ShopDaoImpl.class
+com\wkzuche\crawler\downloader\CasperjsDownloader.class
+com\wkzuche\crawler\dao\CarModelDao.class
+com\wkzuche\crawler\dao\impl\CommonDao.class
